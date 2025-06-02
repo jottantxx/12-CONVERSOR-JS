@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu conversor de moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="logo" src="assets/logo (1).gif" alt="">
+
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select>
+                <option>R$ Real brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="curryce-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+            </select>
+        </label>
+
+        <label>
+
+            valor
+            <input class="input-currecy" placeholder="R$ 10.000,00">
+        </label>
+        
+
+        <button class="convert-button">Coverter</button>
+
+        <section>
+            <div class="curryce-box">
+                <img src="assets/real.png" alt="logo-moeda-a-coverter">
+                <p class="curryce">real</p>
+                <p class="curryce-value-to-covert">R$ 0,00</p>
+            </div>
+
+       <img class="arrow-img" src="assets/Vector (1).png" alt="seta">
+
+             <div class="curryce-box">
+                <img class="currency-img" src="assets/dolar.png" alt="logo-moeda-covertida">
+                <p class="curryce" id="currency-name">Dólar americano</p>
+                <p class="curryce-value" >US$ 0.0</p>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+   <script src="script.js"></script>
+</html>
